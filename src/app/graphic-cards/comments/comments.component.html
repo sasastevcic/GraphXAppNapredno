@@ -1,0 +1,4 @@
+<gx-comment-form (addComment)="addComment($event)"></gx-comment-form>
+<div *ngFor="let comment of comments?.results">
+  <gx-comment [comment]="comment"></gx-comment>
+</div>

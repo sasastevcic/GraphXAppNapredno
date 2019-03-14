@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-6">
+    <b>{{comment.author}}</b>
+  </div>
+  <div class="col-sm-6 text-right">
+    {{comment.date | date: "d.M.yyyy - H:mm"}}
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-12">
+    {{comment.text}}
+  </div>
+</div>
+<br>

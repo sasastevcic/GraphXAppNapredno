@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-sm-2">
+    <img width="100%" src="{{card.image}}">
+  </div>
+  <div class="col-sm-10">
+    <a [routerLink]="[card._id, 'comments']">{{card.title}}</a>
+    <small>{{card.subtitle}}</small>
+    <gx-show-more [text]="card.description" [textLength]="130"></gx-show-more>
+    <span class="float-right">
+      <button class="btn btn-success" (click)="vote(card.grade + 1)">+</button>
+      {{card.grade}}
+      <button class="btn btn-danger" (click)="vote(card.grade - 1)">-</button>
+    </span>
+  </div>
+</div>

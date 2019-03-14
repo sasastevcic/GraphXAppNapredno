@@ -1,0 +1,5 @@
+<div class="btn-group" role="group">
+  <button class="btn btn-secondary" *ngFor="let pageSize of pageSizes" [ngClass]="{'active': activePageSize == pageSize}" (click)="changePageSize(pageSize)">
+    {{pageSize}}
+  </button>
+</div>
